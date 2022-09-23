@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo 'NOTE: Dont forget to follow pattern: {|COMMIT_PATTERN|}'; exit 0;

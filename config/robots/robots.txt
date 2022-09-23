@@ -1,0 +1,3 @@
+# robots.txt file for {|APP_NAME, configure it for Search Engines SEO|}
+
+User-agent: *

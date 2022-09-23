@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-SSR_TEMPLATE_SCRIPT_NONCE', style-src 'self', object-src 'none'">
+    <meta name="description" content="{|APP_DESCRIPTION|}">
+    <title>{|APP_TITLE|}</title>
+    <base href="/">
+    <link rel="preload" as="style" href="./css/styles.css" media="screen" />
+    <link rel="stylesheet" href="./css/styles.css" media="screen" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <div id="root"><!--SSR_TEMPLATE_APP--></div>
+    <!--SSR_TEMPLATE_APP_STATE-->
+  </body>
+</html>

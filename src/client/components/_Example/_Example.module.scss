@@ -1,0 +1,17 @@
+@use '@base-styles-mixins/bp';
+@use '@base-styles-mixins/typography';
+@use '@base-styles-variables/colors';
+
+.hello {
+    @include typography.b1;
+
+    color: colors.$default;
+
+    @include bp.lw(m) {
+        color: colors.$red;
+    }
+}
+
+.test {
+    @include typography.h2;
+}
