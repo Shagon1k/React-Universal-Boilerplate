@@ -23,7 +23,6 @@ const devConfig = {
         historyApiFallback: true,
         port: 1337,
         static: DIST_DIR,
-        server: 'https',
     },
 };
 

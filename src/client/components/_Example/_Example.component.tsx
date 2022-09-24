@@ -14,7 +14,7 @@ const ExampleComponent: React.FC<IExampleProps> = ({ onMakeHelloClick, isHello }
         <>
             <div className={styles.test}>Test</div>
             <button name='Make Hello' onClick={onMakeHelloClick}>
-                Make Hello There
+                Make Hello
             </button>
             <div>{t('test.test')}</div>
             <div className={styles.hello}> {isHello ? 'Hello there!' : 'Bye!!'} </div>
