@@ -17,24 +17,14 @@ Documentation and guidelines for application's Client.
 - Application's Root element ID (APP_ROOT_ID) is configured and comes from **[Application's configuration](/config/application/application.config.js)**;
 
 ## Main areas
-- **[API](/src/client/api/index.ts)** - (*/api*) - used to handle different API calls;
-    > 💡 ***Note**: For CSR approach it calls external API directly, for SSR approach it calls Server side (BFF).*
-- **[Assets](/src/client/assets/)** - (*/assets*) - used to collect application's assets (fonts, images, favicon, etc.);
-    - **[Fonts](/src/client/assets/fonts/)** - (*/assets/fonts*) - application's fonts folder;
-    - **[Images](/src/client/assets/images/)** - (*/assets/images*) - application's static images folder;
-- **[Components](/src/client/components/)** - (*/components*) - used to collect View React Components;
-    - **[Base](/src/client/components/base/)** - (*/components/base*) - base Components (Header, Icon, Button, etc.);
-    - **[Pages](/src/client/components/pages/)** - (*/components/pages*) - pages Components (MainPage, etc.);
-    - **[Routes](/src/client/components/routes/routes.component.tsx)** - (*/components/routes*) - routing (React-Router) configuration for application's pages;
-    > 💡 ***Note**: Covering Component with **Unit/Integration Tests** or adding Component to **UI Component Library** should follow according conventions (see below).*
-- **[Reusables](/src/client/reusables/)** - (*/reusables*) - used to collect React reusable entities (Custom Hooks, HOCs);
-    - **[Custom Hooks](/src/client/reusables/custom-hooks/)** - (*/reusables/custom-hooks*) - Custom Hooks;
-    - **[HOCs](/src/client/reusables/hocs/)** - (*/reusables/hocs*) - reusable HOCs;
-    - **[some-name]** - (*/reusables/[some-name].ts*) - reusables common (e.g. React Context files reused both for Custom Hook and HOC);
-- **[Store](/src/client/store/store.ts)** - (*/store*) - used to handle Global State Management (Redux);
-    - **[Middlewares](/src/client/store/middlewares/index.ts)** - (*/store/middlewares*) - Redux middlewares (e.g. saga.middleware.ts);
-    - **[Slices](/src/client/store/slices/)** - (*/store/slices*) - Redux (Redux-Toolkit) slices with according Reducers/Actions/Sagas/Selectors;
-- **[Styles](/src/client/styles/)** - (*/styles*) - used to collect general styles;
+|Area name|Path|Description|Notes|
+|---|---|---|---|
+|**[API](/src/client/api/index.ts)**|*/api*|used to handle different API calls|For CSR approach it calls external API directly, for SSR approach it calls Server side (BFF).|
+|**[Assets](/src/client/assets/)**|*/assets*|used to collect application's assets (fonts, images, favicon, etc.)|**- [Fonts](/src/client/assets/fonts/)** - (*/assets/fonts*)<br/>**- [Images](/src/client/assets/images/)** - (*/assets/images*)|
+|**[Components](/src/client/components/)**|*/components*|used to collect View React Components|**- [Base](/src/client/components/base/)** - (*/components/base*)<br/>**- [Pages](/src/client/components/pages/)** - (*/components/pages*)<br/>**- [Routes](/src/client/components/routes/routes.component.tsx)** - (*/components/routes*)<br/><br/>Covering Component with **Unit/Integration Tests** or adding Component to **UI Component Library** should follow according conventions (see below).|
+|**[Reusables](/src/client/reusables/)**|*/reusables*|used to collect React reusable entities (Custom Hooks, HOCs)|**- [Custom Hooks](/src/client/reusables/custom-hooks/)** - (*/reusables/custom-hooks*)<br/>**- [HOCs](/src/client/reusables/hocs/)** - (*/reusables/hocs*)<br/>**- [some-name]** - (*/reusables/[some-name].ts*) - reusables common, for example, React Context files reused both for Custom Hook and HOC|
+|**[Store](/src/client/store/store.ts)**|*/store*|used to handle Global State Management (Redux)|**- [Middlewares](/src/client/store/middlewares/index.ts)** - (*/store/middlewares*)<br/>**- [Slices](/src/client/store/slices/)** - (*/store/slices*) - Redux (Redux-Toolkit) slices with according Reducers/Actions/Sagas/Selectors|
+|**[Styles](/src/client/styles/)**|*/styles*|used to collect general styles||
 
 ## Folder's Conventions
 - Adding new **Client Main area**:

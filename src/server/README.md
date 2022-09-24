@@ -8,9 +8,10 @@ Documentation and guidelines for application's Server.
 - Port (SERVER_PORT) is configured and comes from **[Application's configuration](/config/application/application.config.js)**;
 
 ## Main areas
-- **[API](/src/server/api/index.ts)** - (*/api*) - used to handle different API calls, uses /api sub-route for them;
-    > 💡 ***Note**: Could be used as BFF layer.*
-- **[Middlewares](/src/server/middlewares/index.ts)** - (*/middlewares*) - used to handle Server middlewares;
+|Area name|Path|Description|Notes|
+|---|---|---|---|
+|**[API](/src/server/api/index.ts)**|*/api*|used to handle different API calls, uses /api sub-route for them|Could be used as **BFF layer**.|
+|**[Middlewares](/src/server/middlewares/index.ts)**|*/middlewares*|used to handle Server middlewares||
 
 ## Folder's Conventions
 - Adding new **Server Main area**:
