@@ -37,4 +37,4 @@ Documentation and guidelines for application's Client and Server common staff.
 ```
 
 ## [!] To Consider
-- Move same area services (functions, strings, numbers, etc.) to specific folders.
+- Move same area utils (functions, strings, numbers, etc.) to specific folders.
