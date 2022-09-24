@@ -112,6 +112,7 @@ Imagine you don't need UI Components Library (StoryBook). Going through <b>run t
     Even though Static <b>CSR approach</b> is used as primary, application is also able to follow <b>SSR approach</b>.
 <br/>
 Default CSR approach's Client host port: <b>1337</b> (only for development stage)
+<br/>
 Default SSR approach's Server host port: <b>3000</b>
 </details>
 
