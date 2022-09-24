@@ -25,7 +25,7 @@ export const createApp: ICreateAppFunction = ({
     helmetContext,
 }: IApplicationOptions) => {
     const app = (
-        <Application options={{ isServer: isServer, path: path, store: store, services, helmetContext }} />
+        <Application options={{ isServer: isServer, path, store, services, helmetContext }} />
     );
 
     return app;
