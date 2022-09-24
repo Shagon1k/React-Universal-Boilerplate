@@ -34,7 +34,7 @@ You are also free to **use it as a technical specs** to add some separate parts,
 <details>
     <summary>📖 Example</summary>
 Imagine you don't need UI Components Library (StoryBook). Going through <b>run tasks</b> there are a set of <code>npm run storybook:{smth}</code>.
-
+<br/>
 <b>Checking according tasks</b> in <code>package.json</code> ➡ <code>./config/storybook</code> configuration <b>is unnecessary</b> ➡ based on configuration all <code>*.stories.@(js|jsx|ts|tsx)</code> files <b>should be removed</b> ➡ <b>remove</b> all mentioned <b>files/folders</b> + <b>clean up unnecessary NPM packages</b>. Additionally <b>update Webpack aliases</b> and <code>ts{js}config.json</code> <b>"paths" field</b>.
 </details>
 
@@ -66,7 +66,7 @@ Imagine you don't need UI Components Library (StoryBook). Going through <b>run t
 <details>
     <summary>💡 <b>Note</b> (TypeScript tranpiling using Babel)</summary>
     Transpiling TypeScript <b>using Babel</b> (with Webpack <a href="https://www.npmjs.com/package/babel-loader">'babel-loader'</a>, <b>NOT</b> <a href="https://www.npmjs.com/package/ts-loader">'ts-loader'</a>) <b>was chosen</b>: 1) faster compilation (no types check); 2) having single source of compilation - Babel.
-
+<br/>
     On the other hand, using Babel compilation results in <b>completely lose of type safety and TypeScript checks</b> during this phase. That's why additional test script (<a href="https://www.typescriptlang.org/docs/handbook/compiler-options.html">tsc</a>) were presented <b>to check as pre-commit(push) hook + in scope of CI/CD</b>.
 </details>
 
@@ -110,7 +110,7 @@ Imagine you don't need UI Components Library (StoryBook). Going through <b>run t
 <details>
     <summary>💡 <b>Note</b> (CSR and SSR approaches)</summary>
     Even though Static <b>CSR approach</b> is used as primary, application is also able to follow <b>SSR approach</b>.
-
+<br/>
 Default CSR approach's Client host port: <b>1337</b> (only for development stage)
 Default SSR approach's Server host port: <b>3000</b>
 </details>
