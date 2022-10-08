@@ -1,4 +1,4 @@
 // Simply returns value passed
-const mirrorFunction = (value: any): any => value; // eslint-disable-line @typescript-eslint/no-explicit-any
+const mirrorFunction = <T>(value: T): T => value;
 
 export default mirrorFunction;
