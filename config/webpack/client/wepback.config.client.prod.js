@@ -16,8 +16,8 @@ const prodConfig = {
     devtool: 'source-map',
     performance: {
         hints: 'error',
-        maxAssetSize: 4_000_000, // vendor size
-        maxEntrypointSize: 10_000_000, // index entrypoint size
+        maxAssetSize: 2_000_000, // vendor size
+        maxEntrypointSize: 3_000_000, // index entrypoint size
     },
     plugins: [
         getWebpackDefinePlugin({
