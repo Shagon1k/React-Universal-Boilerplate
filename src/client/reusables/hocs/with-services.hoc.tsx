@@ -1,5 +1,5 @@
 import { ServicesConsumer } from '@reusables/services-context';
-import { IServices } from '@common/services';
+import { type IServices } from '@common/services';
 
 interface IComponentWithServicesProps {
     services: IServices;

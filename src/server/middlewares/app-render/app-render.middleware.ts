@@ -4,9 +4,9 @@ import { renderToPipeableStream } from 'react-dom/server';
 
 import { DIST_APP_TEMPLATE } from '@config/environment';
 
-import { Request as IRequest, Response as IResponse, NextFunction as INext } from 'express';
-import { ICreateAppFunction } from '@client/application';
-import { ICreateAppStore } from '@client/store/store';
+import { type Request as IRequest, type Response as IResponse, type NextFunction as INext } from 'express';
+import { type ICreateAppFunction } from '@client/application.models';
+import { type ICreateAppStore } from '@client/store/store.models';
 
 const getAppStateStr = (state: object, CSPNonce: string) => {
     const stringifiedAppState = `
