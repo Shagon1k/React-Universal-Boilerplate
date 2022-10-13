@@ -121,6 +121,7 @@ Documentation and guidelines for application's Client.
 │   Application.component.tsx
 │   Application.module.scss
 │   application.tsx
+│   application.models.ts
 │   index.ts
 │   README.md
 └───

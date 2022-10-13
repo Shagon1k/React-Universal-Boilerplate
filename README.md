@@ -328,6 +328,7 @@ Default SSR approach's Server host port: <b>3000</b>
 │   │   │   ├───slices
 │   │   │   │
 │   │   │   │   store.ts   // main Store setup file (used for both CSR and SSR approaches)
+│   │   │   │   store.models.ts   // Store types models file
 │   │   │   │   store.reducer.ts   // main reducer setup file
 │   │   │   │   store.saga.ts   // root saga setup file (main init + watch sagas)
 │   │   │   └───
@@ -343,6 +344,7 @@ Default SSR approach's Server host port: <b>3000</b>
 │   │   │   Application.component.tsx   // main application Component
 │   │   │   Application.module.scss   // entry styles file
 │   │   │   application.tsx   // main Create App file (used for both CSR and SSR approaches)
+│   │   │   application.models.ts   // application types models file
 │   │   │   index.ts   // Client entry file
 │   │   │   README.md   // Client folder info
 │   │   └───
