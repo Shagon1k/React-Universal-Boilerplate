@@ -1,4 +1,5 @@
-import { useTranslate } from '@reusables/custom-hooks/use-translate.hook';
+import { useTranslates } from '@reusables/custom-hooks';
+import { memo } from 'react';
 
 import styles from './_Example.module.scss';
 
@@ -8,7 +9,7 @@ interface IExampleProps {
 }
 
 const ExampleComponent: React.FC<IExampleProps> = ({ onMakeHelloClick, isHello }: IExampleProps) => {
-    const t = useTranslate();
+    const { t } = useTranslates();
 
     return (
         <>
@@ -22,4 +23,4 @@ const ExampleComponent: React.FC<IExampleProps> = ({ onMakeHelloClick, isHello }
     );
 };
 
-export default ExampleComponent;
+export default memo(ExampleComponent);

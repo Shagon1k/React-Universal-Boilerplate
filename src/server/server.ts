@@ -4,10 +4,8 @@ import { v4 as uuidV4 } from 'uuid';
 
 import { DIST_CLIENT_DIR } from '@config/environment';
 import { SERVER_PORT } from '@config/application';
-
 import { createApp } from '@client/application';
 import { createAppStore } from '@client/store/store';
-
 import apiRouter from './api';
 import { createRenderMiddleware, createServicesMiddleware } from './middlewares';
 

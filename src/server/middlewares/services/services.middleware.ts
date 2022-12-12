@@ -1,6 +1,6 @@
-import { createServices } from '@services';
-
 import { type Request as IRequest, type Response as IResponse, type NextFunction as INext } from 'express';
+
+import { createServices } from '@services';
 
 const createServicesMiddleware = () => async (req: IRequest, res: IResponse, next: INext) => {
     const userAgent = req.headers['user-agent'] || '';

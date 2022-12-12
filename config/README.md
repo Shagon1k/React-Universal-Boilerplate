@@ -42,7 +42,9 @@ Documentation and guidelines for application's config.
 │   │   │
 │   │   ├───test-utils
 │   │   │   │
-│   │   │   ├───custom-utils
+│   │   │   ├───mocks
+│   │   │   │
+│   │   │   ├───custom
 │   │   │   │
 │   │   │   │   test-utils.js
 │   │   │   │   index.js

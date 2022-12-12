@@ -86,6 +86,8 @@ Documentation and guidelines for application's Client.
 │   │
 │   ├───base
 │   │
+│   ├───common
+│   │
 │   ├───pages
 │   │
 │   └───routes
@@ -115,6 +117,7 @@ Documentation and guidelines for application's Client.
 │   ├───base
 │   │
 │   │   main.scss
+│   │   font-declarations.scss
 │   │   reset-normalize.scss
 │   └───
 │

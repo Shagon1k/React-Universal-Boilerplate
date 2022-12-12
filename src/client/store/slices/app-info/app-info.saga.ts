@@ -1,4 +1,5 @@
 import { getContext, put } from 'redux-saga/effects';
+
 import { setDeviceInfo } from './app-info.slice';
 
 /**

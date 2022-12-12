@@ -1,13 +1,13 @@
 @use '@styles/main';
-@use '@base-styles-mixins/typography';
-
-$app-width: 1500px;
+@use '@base-styles-mixins/typography' as t;
+@use '@base-styles-variables/application' as app;
 
 .app-container {
-    @include typography.b3;
+    @include t.b3;
 
     width: 100%;
-    max-width: $app-width;
+    max-width: app.$app-width;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0 40px;
 }

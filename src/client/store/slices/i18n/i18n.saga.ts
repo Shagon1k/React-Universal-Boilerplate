@@ -1,7 +1,10 @@
 import { call, getContext, put, takeLatest } from 'redux-saga/effects';
+import { AnyAction as IAnyAction } from 'redux';
+
 import { setAppLanguage } from '@slices/app-info/app-info.slice';
 import { ACTION_TYPES } from './i18n.slice';
-import { AnyAction } from 'redux';
+import { ILanguageCodes } from '@services';
+
 const { CHANGE_LANGUAGE } = ACTION_TYPES;
 
 /**
@@ -12,7 +15,7 @@ export function* initI18n() {
 
     try {
         yield call(i18n.init);
-        const currentLanguageCode: string = yield call(i18n.getLanguageCode);
+        const currentLanguageCode: ILanguageCodes = yield call(i18n.getLanguageCode);
         yield put(setAppLanguage(currentLanguageCode));
     } catch (e) {
         // TODO: Provide Store-specific error handling
@@ -20,7 +23,7 @@ export function* initI18n() {
     }
 }
 
-export function* changeLanguage({ payload: languageCode }: AnyAction) {
+export function* changeLanguage({ payload: languageCode }: IAnyAction) {
     const { i18n } = yield getContext('services');
 
     try {

@@ -26,6 +26,7 @@ export const DIST_DIR = path.resolve(ROOT_DIR, './dist');
 export const DIST_CLIENT_DIR = path.resolve(DIST_DIR, './client');
 export const DIST_FAVICONS_PREFIX = 'assets/favicons';
 export const DIST_FONTS_PREFIX = 'assets/fonts';
+export const DIST_IMAGES_PREFIX = 'assets/images';
 export const DIST_SCRIPTS_PREFIX = 'js';
 export const DIST_STYLES_PREFIX = 'css';
 export const DIST_APP_TEMPLATE = path.resolve(DIST_CLIENT_DIR, './index.html');

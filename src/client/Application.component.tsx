@@ -4,8 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { StaticRouter } from 'react-router-dom/server';
 
 import { ServicesProvider } from '@reusables/services-context';
-import Head from './components/base/AppHead';
-import Routes from './components/routes';
+import Head from '@components/common/AppHead';
+import Routes from '@components/routes';
 
 import styles from './Application.module.scss';
 
@@ -34,7 +34,11 @@ const Application: React.FC<IApplicationProps> = ({ options }: IApplicationProps
                 <AppRouter {...routerProps}>
                     <Head />
                     <div className={styles['app-container']}>
-                        <Routes />
+                        <header></header>
+                        <main>
+                            <Routes />
+                        </main>
+                        <footer></footer>
                     </div>
                 </AppRouter>
             </ServicesProvider>

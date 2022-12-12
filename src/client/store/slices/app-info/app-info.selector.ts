@@ -1,4 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
+
 import { AppInfoState } from './app-info.slice';
 
 interface IState {
@@ -8,4 +9,5 @@ interface IState {
 const selectAppInfoState = (state: IState): AppInfoState => state.appInfo;
 
 export const selectLanguage = createSelector(selectAppInfoState, (appInfoState) => appInfoState.language);
+export const selectIsMobile = createSelector(selectAppInfoState, (appInfoState) => appInfoState.isMobile);
 export const selectIsDesktop = createSelector(selectAppInfoState, (appInfoState) => appInfoState.isDesktop);

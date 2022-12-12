@@ -35,7 +35,6 @@
             "@api": ["./src/client/api"],
             "@components/*":  ["./src/client/components/*"],
             "@pages/*": ["./src/client/components/pages/*"],
-            "@base/*": ["./src/client/components/base/*"],
             "@reusables/*": ["./src/client/reusables/*"],
             "@slices/*": ["./src/client/store/slices/*"],
             "@test-utils": ["./config/test/jest/test-utils"],
