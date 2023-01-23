@@ -67,6 +67,7 @@ module.exports = {
      * As Project intends to support both JS and TS, special override configuration used for TypeScript files.
      */
     overrides: [
+        // TS overrides
         {
             files: ['*.{ts,tsx}'],
             parser: '@typescript-eslint/parser',
@@ -83,6 +84,11 @@ module.exports = {
             rules: {
                 '@typescript-eslint/consistent-type-definitions': 'warn',
             },
+        },
+        {
+            // RTL (tests) overrides
+            files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec).[jt]s?(x)'],
+            extends: ['plugin:testing-library/react', 'plugin:jest-dom/recommended'],
         },
     ],
 };
